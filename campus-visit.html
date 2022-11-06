@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type=""text/css" href="css/style.css">
+        <title>Campus Visit</title>
+    </head>
+    <body>
+        <header >
+            <h1>Campus Visit</h1>
+            <input type="login" value="Login">
+        </header>
+        <div>
+            <div>
+                <form action="connect.jsp" method="post">
+                    <h2>Respondant <span>Details</span></h2>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Address..">
+        
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="lastname" placeholder="Email..">
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="none">(Rather not say)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div>
+            <form action="connect.jsp" method="post">
+                <div>
+                    <h2>What Did You Like the <span>Most</span>?</h2>
+                    
+                    <label>
+                        Students
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label>
+                        Location
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label>
+                        Campus
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label>
+                        Atmosphere
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+
+                    <label>
+                        Sports
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                </div>
+            </form>
+            <form action="connect.jsp" method="post">
+                <div>
+                    <h2>How Did You Become Interested in the <span>University</span>?</h2>
+    
+                    <label>Friends
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label>Television
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label>Internet
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label>Other
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                </div>
+            </form>
+        </div>
+        <div>
+            <form action="connect.jsp" method="post">
+                <p><label for="comment">Comments (<span>Optional</span>)</label></p>
+                <textarea id="comment" name="comment" rows="6" cols="100"></textarea>
+                <br>
+              </form>
+        </div>
+        <div>
+            <form action="connect.jsp" method="post">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>
